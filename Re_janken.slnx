@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="Re_janken/Re_janken.vcxproj" Id="3faa41b8-583b-477c-b844-b9b91fb4f105" />
+</Solution>
