@@ -30,7 +30,7 @@ int main()
 			{
 			case YES:
 				inputFlag = false;
-				cout << "--------------------------\n";
+				cout << "---------------------------\n";
 				break;
 			case NO:
 				cout << "またね！" << endl;
