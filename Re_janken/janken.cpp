@@ -134,6 +134,7 @@ static RPSResults janken()
 void JankenSimurator()
 {
 	initRand();
+
 	RPSResults currentResult = LOSE;
 	int round = 1;
 	int num = 0;
@@ -144,12 +145,13 @@ void JankenSimurator()
 		0,
 	};
 
-	// n本終わるまでループ
+	// n本か決まるまでループ
 	while (true)
 	{
 		num = 0;
 
-		cout << "何本先取にしますか > " << flush;
+		cout << "じゃんけんゲームへようこそ！" << endl
+			<< "何本先取にしますか > " << flush;
 		cin >> num;
 
 		if (num <= 0)
@@ -158,7 +160,6 @@ void JankenSimurator()
 		}
 		else if (1 <= num && num <= 10)
 		{
-			cout << num << " 本先取にします！\n\n";
 			break;
 		}
 		else
@@ -171,6 +172,7 @@ void JankenSimurator()
 
 	cout << num << " 本先取！　じゃんけんゲーム！\n\n";
 
+	// n本終わるまでループ
 	while (true)
 	{
 		cout << "===== 第 " << round << " 回戦 =====\n\n";
@@ -188,7 +190,7 @@ void JankenSimurator()
 			result.win++;
 		}
 
-		// 3本終わったらループ脱出
+		// n本終わったらループ脱出
 		if (result.lose == num || result.win == num)
 		{
 			break;
