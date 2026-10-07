@@ -1,6 +1,4 @@
 ﻿#include <iostream>
-#include <cstdlib>
-#include <ctime>
 #include "janken.h"
 using namespace std;
 
