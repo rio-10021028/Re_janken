@@ -210,7 +210,7 @@ void JankenSimurator()
 	cout << "===== 最終結果 =====\n\n"
 		<< "勝ち > " << result.win << endl
 		<< "負け > " << result.lose << endl
-		<< "あなたの " << (result.win == 3 ? RPSResultsMessage[WIN] : RPSResultsMessage[LOSE])
+		<< "あなたの " << (result.win == num ? RPSResultsMessage[WIN] : RPSResultsMessage[LOSE])
 		<< endl << endl;
 
 }
